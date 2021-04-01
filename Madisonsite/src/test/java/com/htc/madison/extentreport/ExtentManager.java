@@ -7,14 +7,14 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.htc.madison.constants.Constants;
-import com.htc.madison.utilites.Utility;
+import com.htc.madison.utilites.UtilClass;
 
 
 public class ExtentManager  {
 	private static ExtentReports extent;
 	private static String reportFileName = "Test-Automaton-Report" + ".html";
 	private static String reportFilepath = Constants.EXTENTREPORT_PATH;
-	private static String reportFileLocation = reportFilepath + "\\Report" + Utility.getCurrentTime() + ".html";
+	private static String reportFileLocation = reportFilepath + "\\Report" + UtilClass.getCurrentTime() + ".html";
 
 	public static ExtentReports getInstance() {
 		if (extent == null)

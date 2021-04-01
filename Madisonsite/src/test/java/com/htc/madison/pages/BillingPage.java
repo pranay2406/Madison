@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.htc.madison.utilites.Utility;
+import com.htc.madison.utilites.UtilClass;
 
 import org.openqa.selenium.support.FindBy;
 
@@ -57,7 +57,7 @@ public class BillingPage extends BasePage {
 			companyBy.sendKeys(company);
 			streetBy.sendKeys(street);
 			cityBy.sendKeys(city);
-			Utility.dropdown(regionBy, region);
+			UtilClass.dropdown(regionBy, region);
 			pincodeBy.sendKeys(pincode);
 			mobilenumberBy.sendKeys(mobilenumber);
 			billingcontinueBy.click();

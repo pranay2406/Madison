@@ -6,7 +6,7 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import com.htc.madison.utilites.Utility;
+import com.htc.madison.utilites.UtilClass;
 
 public class HomePage extends BasePage{
 	@FindBy(xpath = "//div[@class='block-content']//ul//li[@class='current']//a//strong")
@@ -25,7 +25,7 @@ public class HomePage extends BasePage{
 
 	public void Home_Page(String search) {
 		try {
-			Utility.waitToBeVisibile(dashboardBy, driver);
+			UtilClass.waitToBeVisibile(dashboardBy, driver);
 			dashboardBy.click();
 			searchproducts.click();
 			searchproducts.sendKeys(search);

@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-import com.htc.madison.utilites.Utility;
+import com.htc.madison.utilites.UtilClass;
 
 
 
@@ -32,7 +32,7 @@ public class ShoppingCartPage extends BasePage {
 
 	public void setAddress(String country, String region, String city, String pin) {
 		try {
-			Utility.dropdown(countryBy, country);
+			UtilClass.dropdown(countryBy, country);
 			regionBy.sendKeys(region);
 			cityBy.sendKeys(city);
 			pincodeBy.sendKeys(pin);

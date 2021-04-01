@@ -1,4 +1,4 @@
-package com.htc.madison.utilites;
+package com.htc.madison.javautilities;
 
 
 import java.io.File;

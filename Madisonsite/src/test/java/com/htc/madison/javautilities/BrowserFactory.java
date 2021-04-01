@@ -1,4 +1,4 @@
-package com.htc.madison;
+package com.htc.madison.javautilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

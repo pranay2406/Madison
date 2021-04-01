@@ -6,7 +6,7 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import com.htc.madison.utilites.Utility;
+import com.htc.madison.utilites.UtilClass;
 
 public class LoginPage extends BasePage {
 
@@ -32,7 +32,7 @@ public class LoginPage extends BasePage {
 
 	public void Login_To_Page(String email, String password) {
 		try {
-			Utility.waitToBeVisibile(accountBy, driver);
+			UtilClass.waitToBeVisibile(accountBy, driver);
 			accountBy.click();
 			loginBy.click();
 			emailidBy.sendKeys(email);

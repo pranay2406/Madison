@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-import com.htc.madison.utilites.Utility;
+import com.htc.madison.utilites.UtilClass;
 
 
 public class RegistrationPage extends BasePage {
@@ -44,7 +44,7 @@ public class RegistrationPage extends BasePage {
 	public void Registration_To_Page(String firstname, String middlename, String lastname, String emailid,
 			String password, String confirmpassword) {
 		try {
-			Utility.waitToBeVisibile(accountBy, driver);
+			UtilClass.waitToBeVisibile(accountBy, driver);
 			accountBy.click();
 			registerBy.click();
 			firstnameBy.sendKeys(firstname);
