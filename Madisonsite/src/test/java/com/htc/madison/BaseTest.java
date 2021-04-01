@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 import com.htc.madison.constants.Constants;
+import com.htc.madison.javautilities.BrowserFactory;
 import com.htc.madison.pages.BasePage;
 import com.htc.madison.pages.BillingPage;
 import com.htc.madison.pages.CartPage;
